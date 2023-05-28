@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit:bold">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+	body {
+	background: #d6e2f0
+	}
+	
+  	.layer1 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: scale(0.5);
+	border-radius: 25px;
+	background: #ffffff;
+	padding: 20px;
+	width: 576px;
+	height: 876px;
+	z-index: 1;
+	}
+	
+	.scale {
+	transform: translate(-50%,-50%);
+	}
+	
+	.layer2 {
+	position: absolute;
+	border-radius: 25px;
+	background: url("images/image-qr-code.png");
+	width: 576px;
+	height: 576px;
+	z-index: 9
+	}
+	
+	.layer1text {
+	position: absolute;
+	bottom: 5%;
+	font-family: 'Outfit';
+	font-size: 34px;
+	text-align: center;
+	color: hsl(218, 44%, 22%);
+	}
+	
+	.layer1text a{
+	color: hsl(220, 15%, 55%);
+	font-size: 30px;
+	}
+	
+    .attribution {
+	font-size: 15px;
+	text-align: center;
+	}
+    .attribution a {
+	color: hsl(228, 45%, 44%);
+	}
+  </style>
+</head>
+<body>
+
+  <div class="scale">
+    <div class="layer1">
+	  <div class="layer2">
+	  </div>
+	  <div class="layer1text">
+        Improve your front-end skills by building projects<br><br>
+	    <a>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</a>
+	  </div>
+    </div>
+  </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.youtube.com/watch?v=ETfiUYij5UE">Thomas</a>.
+  </div>
+</body>
+</html>
